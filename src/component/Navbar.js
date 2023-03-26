@@ -1,19 +1,8 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import { ThemeProvider, createTheme, styled, alpha } from '@mui/material/styles';
+import {AppBar, InputBase,Box, Toolbar, IconButton, Typography, Menu, Container ,Avatar ,Button ,Tooltip , MenuItem } from '@mui/material';
+import { ThemeProvider, createTheme, styled } from '@mui/material/styles';
 import Logo from '../images/Ecoswap logo 4 1.png';
 import SearchIcon from '@mui/icons-material/Search';
-import InputBase from '@mui/material/InputBase';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -22,9 +11,9 @@ function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
+//   const handleOpenNavMenu = (event) => {
+//     setAnchorElNav(event.currentTarget);
+//   };
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
