@@ -5,7 +5,7 @@ import Logo from '../images/Ecoswap logo 4 1.png';
 import SearchIcon from '@mui/icons-material/Search';
 
 const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -14,9 +14,9 @@ function Navbar() {
 //   const handleOpenNavMenu = (event) => {
 //     setAnchorElNav(event.currentTarget);
 //   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+//   const handleOpenUserMenu = (event) => {
+//     setAnchorElUser(event.currentTarget);
+//   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
@@ -147,7 +147,9 @@ function Navbar() {
           </Search>
           <Box sx={{ flexGrow: 0, marginLeft : 8}}>
             <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+              <IconButton 
+            //   onClick={handleOpenUserMenu} 
+              sx={{ p: 0 }}>
           
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
@@ -168,11 +170,13 @@ function Navbar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
+              {
+            //   settings.map((setting) => (
+            //     <MenuItem key={setting} onClick={handleCloseUserMenu}>
+            //       <Typography textAlign="center">{setting}</Typography>
+            //     </MenuItem>
+            //   ))
+              }
             </Menu>
           </Box>
         </Toolbar>
