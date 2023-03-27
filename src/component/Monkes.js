@@ -13,7 +13,7 @@ export default function Monkes(props) {
     <Card sx={{ display: 'flex', width:"50%", boxShadow:0 }}>
        <CardMedia
         component="img"
-        sx={{ width: 151, borderRadius: 5, m: 0.5 }}
+        sx={{ width: 191, borderRadius: 5, m: 0.5 }}
         image={props.monke}
         alt={props.description}
       />
