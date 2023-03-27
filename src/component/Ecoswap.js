@@ -4,15 +4,13 @@ import {Container, Typography, Box} from '@mui/material';
 
 export default function Ecoswap(){
     return(
-        <Container sx={{display: 'grid',  gridTemplateColumns : '3fr 1fr', columnGap : '10px' , fontFamily: 'Poppins', color: '#E7E7E7', textAlign:'center'}}>
+        <Container sx={{display: 'grid',  gridTemplateColumns : '4fr 2fr', columnGap : '10px' , fontFamily: 'Poppins', color: '#E7E7E7', textAlign:'center'}}>
             <Box
             sx={{
                     background: 'linear-gradient(94.15deg, rgba(218, 79, 212, 0.73) -5.1% , #368DF2 131.63%)' ,
-                    width: '100%',
                     border: '1px transparent',
                     borderRadius: '12px',
-                    height: 'auto',
-                    textAlign: 'start'
+                    textAlign: 'center'
                     
                     
                 }}
