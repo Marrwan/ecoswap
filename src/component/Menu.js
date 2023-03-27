@@ -8,7 +8,7 @@ export default function Menu(props) {
     <Toolbar
     component="nav"
     variant="dense"
-    sx={{ justifyContent: 'start', overflowX: 'auto', mt:3, mb:3 }}
+    sx={{ justifyContent: 'start', overflowX: 'auto', mt:1, mb:1 }}
   >
     {sections.map((section) => (
       <Link

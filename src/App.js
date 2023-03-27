@@ -10,8 +10,10 @@ function App() {
   return (
     <div className="App">
   <Navbar title="Econear"/>
+<div style={{'padding' : '0 13'}}>
   <Menu />
   <MonkeList />
+</div>
 
     </div>
   );

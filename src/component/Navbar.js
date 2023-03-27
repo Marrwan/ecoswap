@@ -3,6 +3,7 @@ import {AppBar, InputBase,Box, Toolbar, IconButton, Typography, Menu, Container 
 import { ThemeProvider, createTheme, styled } from '@mui/material/styles';
 import Logo from '../images/Ecoswap logo 4 1.png';
 import SearchIcon from '@mui/icons-material/Search';
+import Profile from '../images/profile.png'
 
 const pages = ['Products', 'Pricing', 'Blog'];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -151,7 +152,7 @@ function Navbar() {
             //   onClick={handleOpenUserMenu} 
               sx={{ p: 0 }}>
           
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Remy Sharp" src={Profile} />
               </IconButton>
             </Tooltip>
             <Menu
