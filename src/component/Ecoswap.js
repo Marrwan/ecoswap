@@ -10,6 +10,7 @@ export default function Ecoswap() {
         gridTemplateColumns: "4fr 2fr",
         columnGap: "10px",
         fontFamily: "Poppins",
+        flexWrap: 'wrap',
         color: "#E7E7E7",
         m: "30px auto",
         textAlign: "center",
