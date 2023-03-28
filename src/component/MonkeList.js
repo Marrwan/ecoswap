@@ -1,5 +1,5 @@
 import React from "react";
-import  {Stack , Card}from '@mui/material';
+import  { Card}from '@mui/material';
 import Monkes from './Monkes';
 import Monke1 from '../images/GenZ Monke.png';
 import Monke2 from '../images/GenZ Monke(2).png';
@@ -17,7 +17,7 @@ export default function MonkeList(props) {
   ))
  return (
         //  <Stack direction="row" spacing={2}>
-        <Card sx={{display: 'flex'}}>
+        <Card sx={{display: 'flex', flexWrap:'wrap'}}>
 
          {compmonke}
         </Card>

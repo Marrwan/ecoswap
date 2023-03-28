@@ -1,21 +1,51 @@
 import React from "react";
 import { Container, Typography } from "@mui/material";
+import { styled } from '@mui/material/styles';
 import suiLogo from "../images/sui-logo.png";
 
 export default function Ecoswap() {
+const Root = styled('div')(({theme})=>({
+    display: "grid",
+    gridTemplateColumns: "4fr 2fr",
+    // gridTemplateRows: "1fr 1fr",
+    columnGap: "10px",
+    fontFamily: "Poppins",
+    flexWrap: 'wrap',
+    color: "#E7E7E7",
+    m: "30px auto",
+    textAlign: "center",
+    [theme.breakpoints.down('xl')]:{
+    
+    },
+    [theme.breakpoints.down('lg')]:{
+
+    },
+    [theme.breakpoints.down('md')]:{
+        // display: 'none',
+        
+        gridTemplateColumns: '1fr',
+    gridTemplateRows: "1fr 1fr",
+    rowGap: '15px',
+    },
+    [theme.breakpoints.down('sm')]:{
+        // display: 'none',
+        gridTemplateColumns: '1fr',
+    gridTemplateRows: "1fr 1fr",
+    rowGap: '15px'
+    },
+    [theme.breakpoints.down('xs')]:{
+        display: 'none',
+    }
+
+}))
   return (
     <Container
       sx={{
-        display: "grid",
-        gridTemplateColumns: "4fr 2fr",
-        columnGap: "10px",
-        fontFamily: "Poppins",
-        flexWrap: 'wrap',
-        color: "#E7E7E7",
         m: "30px auto",
         textAlign: "center",
       }}
     >
+        <Root>
       <Container
         sx={{
           background:
@@ -107,6 +137,7 @@ export default function Ecoswap() {
           <Typography>24h volume</Typography>
         </Typography>
       </Container>
+      </Root>
     </Container>
   );
 }
