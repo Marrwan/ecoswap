@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Typography, Box } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import suiLogo from "../images/sui-logo.png";
 
 export default function Ecoswap() {
@@ -13,10 +13,9 @@ export default function Ecoswap() {
         color: "#E7E7E7",
         m: "30px auto",
         textAlign: "center",
-        
       }}
     >
-      <Box
+      <Container
         sx={{
           background:
             "linear-gradient(94.15deg, rgba(218, 79, 212, 0.73) -5.1% , #368DF2 131.63%)",
@@ -44,8 +43,8 @@ export default function Ecoswap() {
           Swap, earn and build on the leading decentralized cryptocurrency
           protocol. Best NFTxDEFI on SUI
         </Typography>
-      </Box>
-      <Box
+      </Container>
+      <Container
         sx={{
           background:
             "linear-gradient(97.68deg, #6A85EB 4.26%, #1D348B 97.07%)",
@@ -106,7 +105,7 @@ export default function Ecoswap() {
           </Typography>
           <Typography>24h volume</Typography>
         </Typography>
-      </Box>
+      </Container>
     </Container>
   );
 }
