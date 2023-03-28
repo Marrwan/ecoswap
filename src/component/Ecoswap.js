@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Typography, Grid, Box} from "@mui/material";
-import { styled } from '@mui/material/styles';
+import {  Typography, Grid, Box} from "@mui/material";
+// import { styled } from '@mui/material/styles';
 import suiLogo from "../images/sui-logo.png";
 
 // export default function Ecoswap() {
