@@ -11,6 +11,7 @@ export default function Ecoswap() {
         columnGap: "10px",
         fontFamily: "Poppins",
         color: "#E7E7E7",
+        m: "30px auto",
         textAlign: "center",
         
       }}
@@ -53,15 +54,19 @@ export default function Ecoswap() {
           display: "flex",
           flexDirection: "column",
           alignItems: "end",
+          p: '20px 0',
+          pr: "60px",
         }}
       >
-        <Typography sx={{}}>
+        <Typography sx={{
+            textAlign: 'end'
+        }}>
           <Typography>
             <img src={suiLogo} alt={suiLogo} />
             9,898.34
             <div
               style={{
-                width: "160px",
+                width: "260px",
                 height: "0px",
                 border: "1px solid #DEDEDE",
               }}
@@ -69,13 +74,15 @@ export default function Ecoswap() {
           </Typography>
           <Typography>24h volume</Typography>
         </Typography>
-        <Typography sx={{}}>
+        <Typography sx={{
+            textAlign: 'end'
+        }}>
           <Typography>
             <img src={suiLogo} alt={suiLogo} />
             9,898.34
             <div
               style={{
-                width: "160px",
+                width: "260px",
                 height: "0px",
                 border: "1px solid #DEDEDE",
               }}
@@ -83,13 +90,15 @@ export default function Ecoswap() {
           </Typography>
           <Typography>24h volume</Typography>
         </Typography>
-        <Typography sx={{}}>
+        <Typography sx={{
+            textAlign: 'end'
+        }}>
           <Typography>
             <img src={suiLogo} alt={suiLogo} />
             9,898.34
             <div
               style={{
-                width: "160px",
+                width: "260px",
                 height: "0px",
                 border: "1px solid #DEDEDE",
               }}
