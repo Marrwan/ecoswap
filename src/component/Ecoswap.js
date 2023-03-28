@@ -197,7 +197,7 @@ export default function Ecoswap() {
           sx={{
             fontWeight: 400,
             textAlign: 'start',
-            width: '46%',
+            width: '50%',
             ml: "40px"
           }}
         >
@@ -263,14 +263,19 @@ export default function Ecoswap() {
         <Typography sx={{
             textAlign: 'end'
         }}>
-          <Typography>
+          <Typography
+          sx={{
+              fontWeight: 400,
+              lineHeight: "3px",
+          }}
+          >
             <img src={suiLogo} alt={suiLogo} />
             9,898.34
             <div
               style={{
                 width: "9em",
                 height: "0px",
-                border: "1px solid #DEDEDE",
+                border: "0.1px solid #DEDEDE",
               }}
             ></div>
           </Typography>
