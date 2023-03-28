@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
   <Navbar title="Econear"/>
-<div style={{'padding' : '0 100'}}>
+<div style={{'padding' : '0 40px'}}>
   <Menu />
   <MonkeList />
   <Ecoswap />
