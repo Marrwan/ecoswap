@@ -4,13 +4,14 @@ import  {Box,
     Card,
     CardContent,
     CardMedia,
-    Typography, Button }from '@mui/material';
+    Typography, Button, Grid}from '@mui/material';
 
 export default function Monkes(props) {
   const theme = useTheme();
 
   return (
-    <Card sx={{ display: 'flex', width:"50%", boxShadow:0 }}>
+<Grid item lg={6} md={6} sm={12} xs={12} sx={{width:"50%"}}>
+    <Card sx={{ display: 'flex', boxShadow:0 }}>
        <CardMedia
         component="img"
         sx={{ width: 191, borderRadius: 5, m: 0.5 }}
@@ -33,5 +34,6 @@ export default function Monkes(props) {
       </Box>
    
     </Card>
+</Grid>
   );
 }

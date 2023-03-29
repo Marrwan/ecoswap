@@ -84,8 +84,8 @@ function Navbar() {
           <Typography
             variant="h6"
             noWrap
-            component="a"
-            href="/"
+            // component="a"
+            // href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -147,14 +147,12 @@ function Navbar() {
             />
           </Search>
           <Box sx={{ flexGrow: 0, marginLeft : 8}}>
-            <Tooltip title="Open settings">
               <IconButton 
             //   onClick={handleOpenUserMenu} 
               sx={{ p: 0 }}>
           
                 <Avatar alt="Remy Sharp" src={Profile} />
               </IconButton>
-            </Tooltip>
             <Menu
               sx={{ mt: '45px' }}
               id="menu-appbar"
