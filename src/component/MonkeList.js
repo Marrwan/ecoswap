@@ -27,8 +27,6 @@ export default function MonkeList(props) {
     
    }}
     >
-
-
          {compmonke}
    </Grid>
    </Box>

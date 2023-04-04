@@ -78,20 +78,21 @@ function Navbar() {
   return (
       <ThemeProvider theme={darkTheme} >
     <AppBar position="static" style={{ background: '#fff', color: '#000' }} >
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" >
         <Toolbar disableGutters>
-            <img src={Logo} alt={Logo} style={{height: '5em', marginRight : '10px'}} />
+            <img src={Logo} alt={Logo} style={{height: '5em', marginRight : '10px'}                                                                                                             } />
           <Typography
             variant="h6"
-            noWrap
+            // noWrap
             // component="a"
             // href="/"
             sx={{
               mr: 2,
-              display: { xs: 'none', md: 'flex' },
+              display: 'flex' ,
               fontFamily: 'Roboto',
               fontWeight: 800,
               color: 'inherit',
+              // fontSize:{xs:'10px'},
               textDecoration: 'none',
             }}
           >

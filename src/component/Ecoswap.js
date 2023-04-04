@@ -154,7 +154,7 @@ export default function Ecoswap() {
     justifyContent= "space-between"
     // rowSpacing={1} columnSpacing={4}
       sx={{
-        m: "30px 5px",
+        m: {md : "30px 5px", xs: "15px 1px"},
         textAlign: "center",
         flexWrap: 'wrap',
             color: "#E7E7E7",
@@ -174,8 +174,8 @@ export default function Ecoswap() {
           border: "1px transparent",
           borderRadius: "12px",
           textAlign: "center",
-          p: "20px 90px",
-          mb: "50px"
+          p: {md: "20px 90px", xs: "10px 45px"},
+          mb: {sm: "50px", xs: "30px"}
         //   width: "100%",
           // 'text-indent': '24%',
         }}
@@ -185,9 +185,10 @@ export default function Ecoswap() {
           xs={12}
           sx={{
             fontWeight: 600,
+            fontSize: {xs: '30px', sm: '96px'},
             textAlign: 'start',
-            ml: "40px",
-            overflowWrap: 'break-word',
+            ml: {md :"40px", xs: "10px", sm: "40px"},
+            overflowWrap: {md: 'break-word', xs: 'normal'},
             align:"center"
           }}
         >
@@ -197,8 +198,8 @@ export default function Ecoswap() {
           sx={{
             fontWeight: 400,
             textAlign: 'start',
-            width: '50%',
-            ml: "40px"
+            width: {md: '50%', xs: "100%"}, 
+            ml: {sm: "40px", xs: "10px"}
           }}
         >
             
@@ -220,7 +221,7 @@ export default function Ecoswap() {
             "linear-gradient(97.68deg, #6A85EB 4.26%, #1D348B 97.07%)",
           border: "1px transparent",
           borderRadius: "12px",
-          display: "flex",
+          display: {md : "flex", sm: "none", xs: "none"},
           flexDirection: "column",
           alignItems: "end",
           p: '20px 0',
