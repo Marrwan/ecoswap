@@ -8,11 +8,11 @@ import  {Box,
 export default function Monkes(props) {
 
   return (
-<Grid item lg={6} md={6} sm={12} xs={12} sx={{width:"50%"}}>
-    <Card sx={{ display: 'flex', maxWidth: "100%", maxHeight: "100em" , m: "10px", p: "4px 9px" }}>
+<Grid item lg={6} md={6} sm={12} xs={12} sx={{width:"100%"}}>
+    <Card sx={{ display: 'flex', maxWidth: "100%", m: "10px" }}>
        <CardMedia
         component="img"
-        sx={{ width: 191, borderRadius: 5, m: 0.5, height:{md : "1%", xs:"120px", sm: "170px"} }}
+        sx={{ width: 191, borderRadius: 5, m: 0.5, height:{md : "1%", xs:"150px", sm: "170px"} }}
         image={props.monke}
       
         alt={props.description}
