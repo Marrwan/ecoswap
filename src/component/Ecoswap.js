@@ -154,7 +154,7 @@ export default function Ecoswap() {
     justifyContent= "space-between"
     // rowSpacing={1} columnSpacing={4}
       sx={{
-        m: "30px 5px",
+        m: {md : "30px 5px", xs: "15px 1px"},
         textAlign: "center",
         flexWrap: 'wrap',
             color: "#E7E7E7",

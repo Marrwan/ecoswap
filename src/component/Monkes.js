@@ -19,7 +19,7 @@ export default function Monkes(props) {
       />
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <CardContent sx={{ flex: '1 0 auto' }}>
-          <Typography component="div" variant="h5" sx={{marginTop: 0}}>
+          <Typography component="div" variant="h5" sx={{marginTop: 0, fontSize:{md: "20px", xs:"15px"}}}>
             {props.title}
           </Typography>
           <Typography variant="subtitle1" sx={{maxHeight: "100px", fontSize: {xs : "8px", sm: "10px", md: "14px"}}} color="text.secondary" component="p">
