@@ -174,8 +174,8 @@ export default function Ecoswap() {
           border: "1px transparent",
           borderRadius: "12px",
           textAlign: "center",
-          p: "20px 90px",
-          mb: "50px"
+          p: {md: "20px 90px", xs: "10px 45px"},
+          mb: {sm: "50px", xs: "30px"}
         //   width: "100%",
           // 'text-indent': '24%',
         }}
@@ -198,8 +198,8 @@ export default function Ecoswap() {
           sx={{
             fontWeight: 400,
             textAlign: 'start',
-            width: '50%',
-            ml: "40px"
+            width: {md: '50%', xs: "100%"}, 
+            ml: {sm: "40px", xs: "10px"}
           }}
         >
             
