@@ -185,9 +185,10 @@ export default function Ecoswap() {
           xs={12}
           sx={{
             fontWeight: 600,
+            fontSize: {xs: '30px', sm: '96px'},
             textAlign: 'start',
-            ml: "40px",
-            overflowWrap: 'break-word',
+            ml: {md :"40px", xs: "10px", sm: "40px"},
+            overflowWrap: {md: 'break-word', xs: 'normal'},
             align:"center"
           }}
         >
@@ -220,7 +221,7 @@ export default function Ecoswap() {
             "linear-gradient(97.68deg, #6A85EB 4.26%, #1D348B 97.07%)",
           border: "1px transparent",
           borderRadius: "12px",
-          display: "flex",
+          display: {md : "flex", sm: "none", xs: "none"},
           flexDirection: "column",
           alignItems: "end",
           p: '20px 0',
