@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {AppBar, InputBase,Box, Toolbar, IconButton, Typography, Menu, Container ,Avatar ,Button ,Tooltip , MenuItem } from '@mui/material';
+import {AppBar, InputBase,Box, Toolbar, IconButton, Typography, Menu, Container ,Avatar ,Button, MenuItem } from '@mui/material';
 import { ThemeProvider, createTheme, styled } from '@mui/material/styles';
 import Logo from '../images/Ecoswap logo 4 1.png';
 import SearchIcon from '@mui/icons-material/Search';
@@ -88,7 +88,7 @@ function Navbar() {
             // href="/"
             sx={{
               mr: 2,
-              display: 'flex' ,
+              display: {sm : 'flex', xs: 'none'} ,
               fontFamily: 'Roboto',
               fontWeight: 800,
               color: 'inherit',
@@ -150,7 +150,7 @@ function Navbar() {
           <Box sx={{ flexGrow: 0, marginLeft : 8}}>
               <IconButton 
             //   onClick={handleOpenUserMenu} 
-              sx={{ p: 0 }}>
+              sx={{ p: 0, border: "2px solid  #CDCDCD",  }}>
           
                 <Avatar alt="Remy Sharp" src={Profile} />
               </IconButton>
