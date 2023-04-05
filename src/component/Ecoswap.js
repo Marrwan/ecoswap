@@ -229,39 +229,39 @@ export default function Ecoswap() {
           pr: "60px",
         }}
       >
-        <Typography sx={{
+        <Typography variant="body1" sx={{
             textAlign: 'end'
         }}>
-          <Typography>
+          <Typography variant="body2">
             <img src={suiLogo} alt={suiLogo} />
             9,898.34
-            <div
+            <p
               style={{
                 width: "9em",
                 height: "0px",
                 border: "1px solid #DEDEDE",
               }}
-            ></div>
+            ></p>
           </Typography>
           <Typography>24h volume</Typography>
         </Typography>
-        <Typography sx={{
+        <Typography variant="body1" sx={{
             textAlign: 'end'
         }}>
-          <Typography>
+          <Typography variant="body2">
             <img src={suiLogo} alt={suiLogo} />
             9,898.34
-            <div
+            <p
               style={{
                 width: "9em",
                 height: "0px",
                 border: "1px solid #DEDEDE",
               }}
-            ></div>
+            ></p>
           </Typography>
           <Typography>24h volume</Typography>
         </Typography>
-        <Typography sx={{
+        <Typography variant="body1" sx={{
             textAlign: 'end'
         }}>
           <Typography
@@ -269,16 +269,17 @@ export default function Ecoswap() {
               fontWeight: 400,
               lineHeight: "3px",
           }}
+          variant="body2"
           >
             <img src={suiLogo} alt={suiLogo} />
             9,898.34
-            <div
+            <p
               style={{
                 width: "9em",
                 height: "0px",
-                border: "0.1px solid #DEDEDE",
+                border: "1px solid #DEDEDE",
               }}
-            ></div>
+            ></p>
           </Typography>
           <Typography>24h volume</Typography>
         </Typography>
