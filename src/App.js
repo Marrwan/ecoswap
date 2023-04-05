@@ -3,8 +3,8 @@ import MonkeList from './component/MonkeList';
 import Menu from './component/Menu';
 import Ecoswap from './component/Ecoswap';
 import './App.css';
-import PriceTable from './component/PriceTable';
 import PriceList from './component/PriceList';
+import Activity from './component/Activity';
 
   
 function App() {
@@ -17,8 +17,8 @@ function App() {
   <MonkeList />
   <Ecoswap />
   <PriceList />
+  <Activity />
 </div>
-
     </div>
   );
 
