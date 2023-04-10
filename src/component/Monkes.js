@@ -26,8 +26,7 @@ export default function Monkes(props) {
           </Typography>
         </CardContent>
         <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
-         
-<Button variant="contained" sx={{bgcolor:'#DA4FD45C', m: "0 auto"}}>Explore Collection</Button>
+           <Button variant="contained" sx={{bgcolor:'#DA4FD45C', m: "0 auto"}}>Explore Collection</Button>
         </Box>
       </Box>
    

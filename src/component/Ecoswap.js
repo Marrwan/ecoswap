@@ -234,13 +234,13 @@ export default function Ecoswap() {
           <Typography>
             <img src={suiLogo} alt={suiLogo} />
             9,898.34
-            <div
+            <p
               style={{
                 width: "9em",
                 height: "0px",
                 border: "1px solid #DEDEDE",
               }}
-            ></div>
+            ></p>
           </Typography>
           <Typography>24h volume</Typography>
         </Typography>
@@ -250,13 +250,13 @@ export default function Ecoswap() {
           <Typography>
             <img src={suiLogo} alt={suiLogo} />
             9,898.34
-            <div
+            <p
               style={{
                 width: "9em",
                 height: "0px",
                 border: "1px solid #DEDEDE",
               }}
-            ></div>
+            ></p>
           </Typography>
           <Typography>24h volume</Typography>
         </Typography>
@@ -271,13 +271,13 @@ export default function Ecoswap() {
           >
             <img src={suiLogo} alt={suiLogo} />
             9,898.34
-            <div
+            <p
               style={{
                 width: "9em",
                 height: "0px",
                 border: "0.1px solid #DEDEDE",
               }}
-            ></div>
+            ></p>
           </Typography>
           <Typography>24h volume</Typography>
         </Typography>
