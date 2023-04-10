@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {AppBar, InputBase,Box, Toolbar, IconButton, Typography, Menu, Container ,Avatar ,Button ,Tooltip , MenuItem } from '@mui/material';
+import {AppBar, InputBase,Box, Toolbar, IconButton, Typography, Menu, Container ,Avatar ,Button, MenuItem } from '@mui/material';
 import { ThemeProvider, createTheme, styled } from '@mui/material/styles';
 import Logo from '../images/Ecoswap logo 4 1.png';
 import SearchIcon from '@mui/icons-material/Search';
@@ -78,20 +78,21 @@ function Navbar() {
   return (
       <ThemeProvider theme={darkTheme} >
     <AppBar position="static" style={{ background: '#fff', color: '#000' }} >
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" >
         <Toolbar disableGutters>
-            <img src={Logo} alt={Logo} style={{height: '5em', marginRight : '10px'}} />
+            <img src={Logo} alt={Logo} style={{height: '5em', marginRight : '10px'}                                                                                                             } />
           <Typography
             variant="h6"
-            noWrap
+            // noWrap
             // component="a"
             // href="/"
             sx={{
               mr: 2,
-              display: { xs: 'none', md: 'flex' },
+              display: {sm : 'flex', xs: 'none'} ,
               fontFamily: 'Roboto',
               fontWeight: 800,
               color: 'inherit',
+              // fontSize:{xs:'10px'},
               textDecoration: 'none',
             }}
           >
@@ -149,7 +150,7 @@ function Navbar() {
           <Box sx={{ flexGrow: 0, marginLeft : 8}}>
               <IconButton 
             //   onClick={handleOpenUserMenu} 
-              sx={{ p: 0 }}>
+              sx={{ p: 0, border: "2px solid  #CDCDCD",  }}>
           
                 <Avatar alt="Remy Sharp" src={Profile} />
               </IconButton>
