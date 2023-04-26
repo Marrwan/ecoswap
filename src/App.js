@@ -4,7 +4,7 @@ import Menu from './component/Menu';
 import Ecoswap from './component/Ecoswap';
 import './App.css';
 import PriceList from './component/PriceList';
-import Activity from './component/Activity';
+import ActivityList from './component/ActivityList';
 
   
 function App() {
@@ -17,7 +17,7 @@ function App() {
   <MonkeList />
   <Ecoswap />
   <PriceList />
-  <Activity />
+  <ActivityList />
 </div>
     </div>
   );

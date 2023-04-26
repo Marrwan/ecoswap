@@ -7,7 +7,7 @@ export default function PriceList(){
     let number = [1,2,3,4,5,6,7,8];
 
 let App = number.map((index)=>( 
-<Grid item key={index} gridColumn="span 4"  md={5} sm={12} xs={12} sx={{width:{md:"100vh", sm:"100%"},m: "11px 1px"}}>
+<Grid item key={index} gridColumn="span 4" lg={5} md={8} sm={12} xs={12} sx={{width:{md:"100vh", sm:"100%"},m: "11px 1px"}}>
      <PriceTable  no={index} />
 </Grid>))
     return(
@@ -16,7 +16,7 @@ let App = number.map((index)=>(
                 <Typography>Popular Collections</Typography>
                 <Typography >Last 24 hours <ExpandMore /> </Typography>
             </Typography>
-            <Grid container  spacing={2} rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md:12 }} sx={{width: '100%', display:{lg:'flex', md:"grid"}, justifyContent:{lg:'space-between'}}}>
+            <Grid container  spacing={2} rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md:0, lg:1 }} sx={{width: '100%', display:{lg:'flex', md:"grid"}, justifyContent:{lg:'space-between'}}}>
                 {App}
             </Grid>           
         </Box>
