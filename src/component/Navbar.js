@@ -1,24 +1,49 @@
 import * as React from 'react';
-import {AppBar, InputBase,Box, Toolbar, IconButton, Typography, Menu, Container ,Avatar ,Button, MenuItem } from '@mui/material';
+import {AppBar, InputBase,Box, Toolbar, IconButton, Typography, Menu, Container ,Avatar ,Button, MenuItem, Drawer, Icon, Modal, Fade, Backdrop, Grid } from '@mui/material';
 import { ThemeProvider, createTheme, styled } from '@mui/material/styles';
+import { Language, Twitter } from '@mui/icons-material';
 import Logo from '../images/Ecoswap logo 4 1.png';
 import SearchIcon from '@mui/icons-material/Search';
+import Discord from '../images/discord-computer-icons-logo-computer-software-avatar-5dcd8a759521fd6bde97d48d4d0e161f (2).png';
 import Profile from '../images/profile.png'
 
 const pages = ['Products', 'Pricing', 'Blog'];
-// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
+  const [state, setState] = React.useState({
+    top: false,
+    left: false,
+    bottom: false,
+    right: false,
+  });
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: {xs:'75vw', sm: '50vw', md: '40vw'},
+    bgcolor: '#fff',
+    border: '1px solid transparent',
+    borderRadius : '15px',
+    boxShadow: 24,
+    textAlign: 'center',
+    p: 4,
+  };
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
+    }
 
-//   const handleOpenNavMenu = (event) => {
-//     setAnchorElNav(event.currentTarget);
-//   };
-//   const handleOpenUserMenu = (event) => {
-//     setAnchorElUser(event.currentTarget);
-//   };
+    setState({ ...state, [anchor]: open });
+  };
 
+ 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
@@ -79,8 +104,66 @@ function Navbar() {
       <ThemeProvider theme={darkTheme} >
     <AppBar position="static" style={{ background: '#fff', color: '#000' }} >
       <Container maxWidth="xl" >
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        open={open}
+        onClose={handleClose}
+        closeAfterTransition
+        slots={{ backdrop: Backdrop }}
+        slotProps={{
+          backdrop: {
+            timeout: 500,
+          },
+        }}
+      >
+        <Fade in={open}>
+          <Box sx={style}>
+           <Box
+           sx={{
+            borderBottom: '1px solid #000000',
+
+           }} 
+           >
+            <Typography>Connect your wallet</Typography>
+            <Typography>If you don’t have a wallet, you can select a provider and create one now. Learn more</Typography> 
+           </Box >
+
+           <Box 
+           sx={{display: 'flex'}}
+           >
+            <Grid>
+            <Typography>WalletConnect</Typography>
+            <Typography>MetaMask</Typography>
+            <Typography>Coinbase Wallet</Typography>
+            <Typography>Phantom</Typography>
+            <Typography>BitKeep</Typography>
+            <Typography>Core</Typography>
+            </Grid>
+            <Grid>
+            <Typography></Typography>
+            <Typography>Popular</Typography>
+            <Typography></Typography>
+            <Typography>SOLANA</Typography>
+            <Typography>BNB CHAIN</Typography>
+            <Typography>AVALANCHE</Typography>
+            </Grid>
+           </Box>
+           
+           <Box
+           sx={{borderTop: '1px solid black'}}
+           >
+            <Typography
+            sx={{ textAlign: 'center', p: 'auto 0'}}
+            >
+            Show More
+            </Typography>
+           </Box>
+          </Box>
+        </Fade>
+      </Modal>
         <Toolbar disableGutters>
-            <img src={Logo} alt={Logo} style={{height: '5em', marginRight : '10px'}                                                                                                             } />
+            <img src={Logo} alt={Logo} style={{height: '5em', marginRight : '10px'}} />
           <Typography
             variant="h6"
             // noWrap
@@ -119,11 +202,11 @@ function Navbar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
+              {/* {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
-              ))}
+              ))} */}
             </Menu>
           </Box>
          
@@ -149,13 +232,13 @@ function Navbar() {
           </Search>
           <Box sx={{ flexGrow: 0, marginLeft : 8}}>
               <IconButton 
-            //   onClick={handleOpenUserMenu} 
+              onClick={toggleDrawer('right', true)} 
               sx={{ p: 0, border: "2px solid  #CDCDCD",  }}>
           
-                <Avatar alt="Remy Sharp" src={Profile} />
+                <Avatar alt={Profile} src={Profile} />
               </IconButton>
             <Menu
-              sx={{ mt: '45px' }}
+              sx={{ mt: '45px', width: '20px', bgcolor:'#FFFFFF' }}
               id="menu-appbar"
               anchorEl={anchorElUser}
               anchorOrigin={{
@@ -170,13 +253,58 @@ function Navbar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {
-            //   settings.map((setting) => (
-            //     <MenuItem key={setting} onClick={handleCloseUserMenu}>
-            //       <Typography textAlign="center">{setting}</Typography>
-            //     </MenuItem>
-            //   ))
-              }
+              
+               
+                 <MenuItem onClick={handleCloseUserMenu}>
+                   <Drawer 
+                
+                anchor='right'
+                open={state['right']}
+                onClose={toggleDrawer('right', false)}
+                >
+                   <Box
+      sx={{ pt:'20px', pb: '50px', width: 250, background: '#F3F3F3',  color:'#8C8B8B', maxHeight: '100vh', height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', textAlign: 'center' }}
+      role="presentation"
+      onClick={toggleDrawer('right', false)}
+      onKeyDown={toggleDrawer('right', false)}
+    >
+      <Box>
+      <Avatar alt="Remy Sharp" src={Profile}  sx={{m: '0 auto'}}/> 
+
+      <Box
+      sx={{mt: '50px'}}
+      >
+      
+        <Typography 
+        onClick={handleOpen}
+        sx={{borderBottom: '1px solid black', cursor: 'pointer'}}
+        >Connect Wallet</Typography>
+        <Typography
+        sx={{borderBottom: '1px solid black', cursor: 'pointer'}}
+        >My Collections</Typography>
+        <Typography 
+        sx={{borderBottom: '1px solid black', cursor: 'pointer'}}
+        >Pool</Typography>
+      </Box>
+      </Box>
+      <Box 
+      sx={{
+        display: 'flex',
+        justifyContent: 'space-around',
+        m: '0 auto',
+        width: '70%'
+      }}>
+      <Twitter onClick={() => window.location = "/"} sx={{color: 'black'}}/>
+        <Language sx={{color: 'black'}} />
+        <Icon >
+
+        <img src={Discord} alt={Logo} style={{height: 'inherit', width:'inherit'}} />
+        </Icon>
+      </Box>
+
+</Box>
+                </Drawer>
+                 </MenuItem>
             </Menu>
           </Box>
         </Toolbar>

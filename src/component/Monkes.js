@@ -14,6 +14,7 @@ export default function Monkes(props) {
         component="img"
         sx={{ width: 191, borderRadius: 5, m: 0.5, height:{md : "1%", xs:"120px", sm: "170px"} }}
         image={props.monke}
+        loading='lazy'
       
         alt={props.description}
       />

@@ -1,28 +1,25 @@
 import React from 'react';
 import PriceTable from './PriceTable';
-import { Box } from '@mui/material';
-import Monke1 from '../images/GenZ Monke.png';
-import Monke2 from '../images/GenZ Monke(2).png';
-import Monke3 from '../images/GenZ Monke(3).png';
-import Monke4 from '../images/GenZ Monke(4).png';
-import Monke5 from '../images/GenZ Monke(5).png';
-
+import { Box, Grid, Typography } from '@mui/material';
+import { ExpandMore } from '@mui/icons-material';
 
 export default function PriceList(){
-    let number = [1,2,3,4,5,6,7];
-    const monkes = [
-        {monke: Monke1, title : "Gen Z Monke 1", description: "GenZ Monkesby Softchain Labs is an utility collection with the best in class art. We’re  building a suite of NFT dApps that are scalable, useful and easy to use for Sui Network. With the extensive experience and success on Near Blockchain, we’re ready to take Sui NFTs to the Next Level"},
-    {monke: Monke2,  title : "Gen Z Monke 2", description: "GenZ Monkesby Softchain Labs is an utility collection with the best in class art. We’re  building a suite of NFT dApps that are scalable, useful and easy to use for Sui Network. With the extensive experience and success on Near Blockchain, we’re ready to take Sui NFTs to the Next Level"}
-    ,{ monke: Monke3, title : "Gen Z Monke", description: "GenZ Monkesby Softchain Labs is an utility collection with the best in class art. We’re  building a suite of NFT dApps that are scalable, useful and easy to use for Sui Network. With the extensive experience and success on Near Blockchain, we’re ready to take Sui NFTs to the Next Level"},
-    {monke: Monke4, title: "Gen Z Monke 4", description: "GenZ Monkesby Softchain Labs is an utility collection with the best in class art. We’re  building a suite of NFT dApps that are scalable, useful and easy to use for Sui Network. With the extensive experience and success on Near Blockchain, we’re ready to take Sui NFTs to the Next Level"}
-  ,  {monke: Monke5, title: "Gen Z Monke 5", description: "GenZ Monkesby Softchain Labs is an utility collection with the best in class art. We’re  building a suite of NFT dApps that are scalable, useful and easy to use for Sui Network. With the extensive experience and success on Near Blockchain, we’re ready to take Sui NFTs to the Next Level"}
-  ];
-let App = monkes.map((item, index)=>( <Box key={index.title} sx={{m: "11px 1px"}}>
+    let number = [1,2,3,4,5,6,7,8];
+
+let App = number.map((index)=>( 
+<Grid item key={index} gridColumn="span 4" lg={5} md={8} sm={12} xs={12} sx={{width:{md:"100vh", sm:"100%"},m: "11px 1px"}}>
      <PriceTable  no={index} />
-     </Box>))
+</Grid>))
     return(
-        <Box>
-            {App}            
+        <Box sx={{width:"100%", marginBottom:'20px'}}>
+            <Typography sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                <Typography>Popular Collections</Typography>
+                <Typography >Last 24 hours <ExpandMore /> </Typography>
+            </Typography>
+            <Grid container  spacing={2} rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md:0, lg:1 }} sx={{width: '100%', display:{lg:'flex', md:"grid"}, justifyContent:{lg:'space-between'}}}>
+                {App}
+            </Grid>           
         </Box>
+        
     )
 }
