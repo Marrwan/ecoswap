@@ -16,6 +16,11 @@ function Navbar() {
     bottom: false,
     right: false,
   });
+  const walletConnectStyle = {
+    borderBottom: '1px solid black',
+     cursor: 'pointer',
+    padding: '10px 0',
+  paddingRight: '30%'}
   const style = {
     position: 'absolute',
     top: '50%',
@@ -132,7 +137,7 @@ function Navbar() {
            <Box 
            sx={{display: 'flex'}}
            >
-            <Grid>
+            <Grid container>
             <Typography>WalletConnect</Typography>
             <Typography>MetaMask</Typography>
             <Typography>Coinbase Wallet</Typography>
@@ -277,13 +282,13 @@ function Navbar() {
       
         <Typography 
         onClick={handleOpen}
-        sx={{borderBottom: '1px solid black', cursor: 'pointer'}}
+        sx={walletConnectStyle}
         >Connect Wallet</Typography>
         <Typography
-        sx={{borderBottom: '1px solid black', cursor: 'pointer'}}
+        sx={walletConnectStyle}
         >My Collections</Typography>
         <Typography 
-        sx={{borderBottom: '1px solid black', cursor: 'pointer'}}
+        sx={walletConnectStyle}
         >Pool</Typography>
       </Box>
       </Box>

@@ -4,11 +4,11 @@ import  { Grid, Box, Typography}from '@mui/material';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Monkes from './Monkes';
-import Monke1 from '../images/GenZ Monke.png';
-import Monke2 from '../images/GenZ Monke(2).png';
-import Monke3 from '../images/GenZ Monke(3).png';
-import Monke4 from '../images/GenZ Monke(4).png';
-import Monke5 from '../images/GenZ Monke(5).png';
+import Monke1 from '../../images/GenZ Monke.png';
+import Monke2 from '../../images/GenZ Monke(2).png';
+import Monke3 from '../../images/GenZ Monke(3).png';
+import Monke4 from '../../images/GenZ Monke(4).png';
+import Monke5 from '../../images/GenZ Monke(5).png';
 
 
 export default function MonkeList(props) {

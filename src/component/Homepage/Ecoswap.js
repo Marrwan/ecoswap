@@ -1,7 +1,7 @@
 import React from "react";
 import {  Typography, Grid, Box} from "@mui/material";
 // import { styled } from '@mui/material/styles';
-import suiLogo from "../images/sui-logo.png";
+import suiLogo from "../../images/sui-logo.png";
 
 // export default function Ecoswap() {
 // const Root = styled('div')(({theme})=>({
