@@ -56,7 +56,6 @@ cryptocurrency protocol. Best NFTxDEFI on SUISwap, </Typography>
       <Twitter onClick={() => window.location = "/"} sx={{color: 'black'}}/>
         <Language sx={{color: 'black'}} />
         <Icon >
-
         <img src={Discord} alt={Logo} style={{height: 'inherit', width:'inherit'}} />
         </Icon>
       </Box>
