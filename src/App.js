@@ -1,24 +1,26 @@
 import Navbar from './component/Navbar';
-import MonkeList from './component/MonkeList';
-import Menu from './component/Menu';
-import Ecoswap from './component/Ecoswap';
 import './App.css';
-import PriceList from './component/PriceList';
-import ActivityList from './component/ActivityList';
+import Bottom from './component/Bottom';
+import Homepage from './container/Homepage';
+import { Route, Routes } from 'react-router-dom';
+import Collection from './component/Collection/Collection';
+import NFT from './component/Collection/NFT';
+import Monke from './images/GenZ Monke.png';
 
-  
+
 function App() {
   
   return (
     <div className="App">
   <Navbar title="Econear"/>
-<div style={{'padding' : '0 40px' }}>
-  <Menu />
-  <MonkeList />
-  <Ecoswap />
-  <PriceList />
-  <ActivityList />
-</div>
+  <Routes>
+    {/* <Route path='/' Component={Homepage}></Route> */}
+    {/* <Route path='/' element={<NFT monke={Monke} title="lorem ipsum"/>}></Route> */}
+    <Route path='/' element={<Collection/>}></Route>
+    <Route></Route>
+    <Route></Route>
+  </Routes>
+<Bottom/>
     </div>
   );
 

@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import Banana from '../images/Monkes Logo 1.png';
-import Sui from '../images/sui-logo8d3c44e 4.png';
+import Banana from '../../images/Monkes Logo 1.png';
+import Sui from '../../images/sui-logo8d3c44e 4.png';
 
 export default function PriceTable(props){
 return(
