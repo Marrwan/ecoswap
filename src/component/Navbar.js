@@ -181,8 +181,11 @@ function Navbar() {
               fontWeight: 800,
               color: 'inherit',
               // fontSize:{xs:'10px'},
+              cursor: 'pointer',
               textDecoration: 'none',
             }}
+
+            onClick = {()=>{window.location = '/'}}
           >
             ECOSWAP
           </Typography>
@@ -286,8 +289,10 @@ function Navbar() {
         >Connect Wallet</Typography>
         <Typography
         sx={walletConnectStyle}
+        onClick = {() => {window.location = '/collection'}}
         >My Collections</Typography>
         <Typography 
+        onClick={()=> {window.location = '/pool'}}
         sx={walletConnectStyle}
         >Pool</Typography>
       </Box>

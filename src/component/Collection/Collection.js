@@ -24,28 +24,31 @@ export default function Collection(){
 
   return (
     <Box sx={{maxWidth: "100vw",
-    background: '#DA4FD480',
+    background: 'rgba(218, 79, 212, 0.5)',
+    height: {lg: '80vh', md:'83vh', sm:'85vh' },
+    pt: '20px'
+
 
     }}>
       <Typography
       sx={{
         color: '#161616', 
-        fontWeight: 600
+        fontWeight: 600,
+        m: '20px 10px',
+      
+        fontFamily: 'Poppins',
+        textAlign: 'start',
       }}
       >My Collections</Typography>
-   <Box
-   
+   <Grid
+   container
    sx={{
-    width: "100%",
-    display: 'grid',
-    // justifyContent: 'space-around',
-    gridTemplateColumns: '1fr 1fr ',
-    overflow : 'hidden'
+    width: "100vw",
 
    }}
     >
          {compmonke}
-   </Box>
+   </Grid>
    </Box>
   )
 }

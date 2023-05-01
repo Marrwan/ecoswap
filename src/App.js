@@ -4,8 +4,7 @@ import Bottom from './component/Bottom';
 import Homepage from './container/Homepage';
 import { Route, Routes } from 'react-router-dom';
 import Collection from './component/Collection/Collection';
-import NFT from './component/Collection/NFT';
-import Monke from './images/GenZ Monke.png';
+import Pool from './component/Pool/Pool';
 
 
 function App() {
@@ -14,10 +13,9 @@ function App() {
     <div className="App">
   <Navbar title="Econear"/>
   <Routes>
-    {/* <Route path='/' Component={Homepage}></Route> */}
-    {/* <Route path='/' element={<NFT monke={Monke} title="lorem ipsum"/>}></Route> */}
-    <Route path='/' element={<Collection/>}></Route>
-    <Route></Route>
+    <Route path='/' element={<Homepage/>}></Route>
+    <Route path='/collection' element={<Collection/>}></Route>
+    <Route path='/pool' element={<Pool/>}></Route>
     <Route></Route>
   </Routes>
 <Bottom/>

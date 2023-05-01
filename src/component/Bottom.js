@@ -15,7 +15,7 @@ function Navbar() {
     >
         
         <BottomNavigation 
-        sx={{display: 'flex', justifyContent : 'space-between', alignItems: 'center', background: '#D9D9D9', height: {lg: '20vh', md:'17vh', sm:'15vh' }  }}
+        sx={{display: 'flex', justifyContent : 'space-between', alignItems: 'center', background: '#D9D9D9', height: {lg: '18vh', md:'14vh', sm:'15vh' }  }}
         >
             <Toolbar disableGutters>
             <img src={Logo} alt={Logo} style={{height: '5em', marginRight : '10px'}} />
@@ -41,7 +41,7 @@ function Navbar() {
             sx={{textAlign: 'center'}}
             >
                 <Typography
-                sx={{textAlign: 'center', width: '45%', m: 'auto ', fontSize: {xs : '6px', sm: '7px', md: '20px', lg: '20px', xl: '30px'}}}
+                sx={{textAlign: 'center', width: '45%', m: 'auto ', fontSize: {xs : '6px', sm: '7px', md: '15px', lg: '15px', xl: '30px'}}}
                 >Swap, earn and build on the leading decentralized 
 cryptocurrency protocol. Best NFTxDEFI on SUI.Swap, earn and build on the leading decentralized 
 cryptocurrency protocol. Best NFTxDEFI on SUISwap, </Typography>
