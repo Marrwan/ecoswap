@@ -4,7 +4,7 @@ import Bottom from './component/Bottom';
 import Homepage from './container/Homepage';
 import { Route, Routes } from 'react-router-dom';
 import Collection from './component/Collection/Collection';
-import Pool from './component/Pool/Pool';
+import Pool from './container/Pool';
 
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
   return (
     <div className="App">
   <Navbar title="Econear"/>
+  
   <Routes>
     <Route path='/' element={<Homepage/>}></Route>
     <Route path='/collection' element={<Collection/>}></Route>
