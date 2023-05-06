@@ -1,7 +1,3 @@
-import { Box, Typography } from '@mui/material';
-import React from 'react';
-import Monke from '../../images/genz background.png';
-import MonkeLogo from '../../images/Monkes Logo 1.png';
 
 export default function Pool(){
     return(
@@ -13,7 +9,7 @@ export default function Pool(){
             <Box 
             sx={{
                 marginLeft: '20vw',
-                // width: '50vw'
+                width: '50vw'
             }}
             >
                 <Typography component="img" src={MonkeLogo} sx={{
