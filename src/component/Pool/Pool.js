@@ -13,7 +13,7 @@ export default function Pool(){
             <Box 
             sx={{
                 marginLeft: '20vw',
-                width: '50vw'
+                // width: '50vw'
             }}
             >
                 <Typography component="img" src={MonkeLogo} sx={{
