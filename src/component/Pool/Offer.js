@@ -1,10 +1,26 @@
-import { ExpandMore } from "@mui/icons-material";
+import { ExpandMore, FilterAltOutlined } from "@mui/icons-material";
 import { Box, Button, Grid } from "@mui/material";
 import React from "react";
 import Image from "./Image";
 
 export default function Offer(props){
 return(
+    <Box>
+        
+<Box sx={{
+    display: 'flex',
+    justifyContent: 'start',
+}}>
+            <Button   sx={{
+                border: '1px solid black',
+                color: 'black',
+                fontWeight: 600,
+                borderRadius : '6px',
+                marginLeft: '10px',
+                marginBottom: '10px',
+            }} ><FilterAltOutlined /> Filter</Button>
+        </Box>
+        <hr/>
     <Box
     sx={{
         display : 'grid',
@@ -40,6 +56,8 @@ return(
                 return <Image />
             })}
         </Grid>
+    </Box>
+    
     </Box>
 )
 }
