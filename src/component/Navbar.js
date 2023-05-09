@@ -304,11 +304,11 @@ function Navbar() {
         m: '0 auto',
         width: '70%'
       }}>
-      <Twitter onClick={() => window.location = "/"} sx={{color: 'black'}}/>
+      <Twitter onClick={() => window.location = "https://twitter.com/ecoswapfi"} sx={{color: 'black'}}/>
         <Language sx={{color: 'black'}} />
         <Icon >
 
-        <img src={Discord} alt={Logo} style={{height: 'inherit', width:'inherit'}} />
+        <img src={Discord} alt={Discord} onClick={()=> window.location = "https://discord.gg/monkes"}  style={{height: 'inherit', width:'inherit'}} />
         </Icon>
       </Box>
 

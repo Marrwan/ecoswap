@@ -53,10 +53,10 @@ cryptocurrency protocol. Best NFTxDEFI on SUISwap, </Typography>
         m: '0 auto',
         width: '20%'
       }}>
-      <Twitter onClick={() => window.location = "/"} sx={{color: 'black'}}/>
+      <Twitter onClick={() => window.location = "https://twitter.com/ecoswapfi"} sx={{color: 'black'}}/>
         <Language sx={{color: 'black'}} />
         <Icon >
-        <img src={Discord} alt={Logo} style={{height: 'inherit', width:'inherit'}} />
+        <img src={Discord} onClick={()=> window.location = "https://discord.gg/monkes"} alt={Discord} style={{height: 'inherit', width:'inherit'}} />
         </Icon>
       </Box>
         </BottomNavigation>
