@@ -2,13 +2,29 @@ import React from 'react';
 import { Box, Button, Typography } from "@mui/material";
 import Banana from '../../images/Monkes Logo 1.png';
 import Sui from '../../images/sui-logo8d3c44e 4.png';
+import { FilterAltOutlined } from '@mui/icons-material';
 
 
 export default function Activity(props){
     return(
         <Box>
+
             
-            <Button>Filter</Button>
+           
+<Box sx={{
+    display: 'flex',
+    justifyContent: 'start',
+}}>
+            <Button   sx={{
+                border: '1px solid black',
+                color: 'black',
+                fontWeight: 600,
+                borderRadius : '6px',
+                marginLeft: '10px',
+                marginBottom: '10px',
+            }} ><FilterAltOutlined /> Filter</Button>
+        </Box>
+        <hr/>
             {[1,2,3,4].map((i)=>{
 
            return(
