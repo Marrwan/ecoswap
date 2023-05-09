@@ -1,5 +1,5 @@
-import { ExpandMore, FilterAltOutlined } from "@mui/icons-material";
-import { Box, Button, Grid } from "@mui/material";
+import {  FilterAltOutlined } from "@mui/icons-material";
+import { Box, Button } from "@mui/material";
 import React from "react";
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -77,7 +77,7 @@ return(
                 {row.offer_price}
               </TableCell>
               <TableCell align="right">{row.total_volume}</TableCell>
-              <TableCell align="right">{row.fat}</TableCell>
+              <TableCell align="right">{row.total_offers}</TableCell>
               <TableCell align="right">{row.bidders}</TableCell>
             </TableRow>
           ))}

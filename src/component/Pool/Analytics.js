@@ -50,7 +50,7 @@ return(
                 color: 'black',
                 fontWeight: 600,
                 borderRadius : '6px',
-                marginBottom: index === 4 ? 0 : '10px',
+                marginBottom: '0',
             }}
         >
             {text} <ExpandMore/>
