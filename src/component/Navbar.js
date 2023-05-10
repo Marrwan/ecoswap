@@ -34,7 +34,8 @@ function Navbar() {
     textAlign: 'center',
     p: 4,
   };
-
+  const wallets = ['WalletConnect', 'MetaMask', 'Coinbase Wallet', 'Phantom', 'BitKeep', 'Core'];
+  const blockchains = ['.', 'Popular', '.', 'SOLANA', 'BNB CHAIN', 'AVALANCHE'];
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [open, setOpen] = React.useState(false);
@@ -137,21 +138,19 @@ function Navbar() {
            <Box 
            sx={{display: 'flex'}}
            >
-            <Grid container>
-            <Typography>WalletConnect</Typography>
-            <Typography>MetaMask</Typography>
-            <Typography>Coinbase Wallet</Typography>
-            <Typography>Phantom</Typography>
-            <Typography>BitKeep</Typography>
-            <Typography>Core</Typography>
+            <Grid container direction='column'>
+            {wallets.map((wallet) => (
+              <Grid item key={wallet}>
+                <Typography sx={{fontWeight: '600'}}> {wallet} </Typography>
+                </Grid>
+            ))}
             </Grid>
-            <Grid>
-            <Typography></Typography>
-            <Typography>Popular</Typography>
-            <Typography></Typography>
-            <Typography>SOLANA</Typography>
-            <Typography>BNB CHAIN</Typography>
-            <Typography>AVALANCHE</Typography>
+            <Grid container direction='column' gap="2" gridTemplateRows='1fr 1fr 1fr 1fr 1fr 1fr'>
+           {blockchains.map((blockchain)=>(
+            <Grid item key={blockchain}>
+              <Typography sx={{opacity: blockchain == '.' ? 0 : 1}}>{blockchain}</Typography>
+              </Grid>
+           ))}
             </Grid>
            </Box>
            

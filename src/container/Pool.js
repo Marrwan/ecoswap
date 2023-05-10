@@ -47,8 +47,7 @@ export default function Pool(){
                     display: 'flex',
                     justifyContent : 'space-between'
                 }}
-                >
-                    
+                >   
                 <Typography>
 
                 GenZ Monkes
